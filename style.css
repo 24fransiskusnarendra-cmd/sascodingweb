@@ -1,0 +1,221 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #0033a0, #c8102e);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-box img {
+    width: 45px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    background: linear-gradient(120deg, #0033a0, #c8102e, #ffde00);
+    background-size: 300% 300%;
+    animation: bgMove 8s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 18px;
+    background: #ffeb3b;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #ffeb3b;
+}
+
+/* NEWS CARDS */
+.cards {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #1a1a1a;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CLUB INFO */
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.info-item {
+    width: 300px;
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.info-item:hover {
+    background: #1c1c1c;
+}
+
+.info-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* JERSEY */
+.jersey-box img {
+    width: 230px;
+}
+
+.jersey-btn {
+    margin-top: 20px;
+    background: #ffeb3b;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    transition: 0.25s;
+}
+
+.jersey-btn:hover {
+    transform: scale(1.1);
+}
+
+/* TICKETS */
+.ticket-sec {
+    background: linear-gradient(120deg, #0033a0, #c8102e);
+    padding: 80px 20px;
+}
+
+.ticket-desc {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.ticket-btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #ffeb3b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    transition: 0.25s;
+}
+
+.ticket-btn:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    background: #0033a0;
+    padding: 18px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
